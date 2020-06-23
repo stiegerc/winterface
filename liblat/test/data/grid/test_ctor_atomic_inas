@@ -1,0 +1,10 @@
+# good test ctor script for inas
+
+verbosity = 0
+
+wout = data/w90/inas_mono/wannier90.wout
+hrdat = data/w90/inas_mono/wannier90_hr.dat
+
+mode =  atomic
+
+vprefix = data/grid/outp/

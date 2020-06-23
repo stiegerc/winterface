@@ -1,0 +1,4 @@
+
+verbosity = 0
+prefix = output/p/
+wout = data/wannier90.wout

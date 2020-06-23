@@ -1,0 +1,37 @@
+Here we combine multiple wannierizations into one large structure.
+The workflow is as follows:
+- generate wad files from previous examples (stack and lateral)
+- modify the wads to suit our purpose (here rotate bonds)
+- generate Hamiltonian matrices from Layer_Matrix.dat
+
+The Layer_Matrix.dat holds the structure for which we generate Hamiltonians.
+It must be generated manually (here an example is provided).
+The atomic types must include an index as to which wad file they belong to.
+This index must correspond to the order in which the wads are given in the
+input script. The format is 'i:type'.
+
+i.e.
+The type '1:Mo' is a Molydenum atom found in the second wad file
+The type '0:S-026' is a Sulfur atom found in the first wad file
+The type '2:W' is a Tungesten atom found in the third wad file
+
+for this example the corresponding line in the 'winput' file is:
+wbh = wads/interf_rot.wad wads/dbl_left_rot.wad wads/dbl_right_rot.wad
+
+The output of ltool will specify how the wads are adapted:
+e.g. '0 <- 1' means the second wad was adapted to fit the first.
+
+For the example here, the second and third wads get their Fermi levels
+and Wannier signs adapted to match the first wad.
+Therefore, the valid Fermi energy for the whole structure is that used
+for the first wad. That is the Fermi level found in the OUTCAR file
+of the lateral example.
+
+The line
+wbh_out = interf_mod.wad dbl_left_mod.wad dbl_right_mod.wad
+specifies the filenames for the modified wads used when generating
+the Hamiltonian matrices.
+
+This feature of combining Wannierizations is experimental. However, it could be
+used for quantum transport, except a 'ph_mat_par' file has to be generated first
+from the layer matrix and the wads.

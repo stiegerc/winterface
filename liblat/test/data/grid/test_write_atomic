@@ -1,0 +1,25 @@
+# good test write atomic script
+
+verbosity = 0
+
+wout = data/w90/mos2/wannier90.wout
+hrdat = data/w90/mos2/wannier90_hr.dat
+weig = data/w90/mos2/wannier90.eig
+outcar = data/w90/mos2/OUTCAR
+
+tol = 0.0
+
+prefix = data/grid/outp/
+no_stump = T
+
+rhok = 0
+Nk = 0
+
+mode =  atomic
+r = 1 1 0
+IR = 19.472584
+B
+ 13.600000  0.000000 -0.000000
+  0.000000 29.893856  0.000000
+  0.000000  0.000000 17.666916
+

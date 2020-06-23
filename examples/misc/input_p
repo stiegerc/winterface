@@ -1,0 +1,4 @@
+
+verbosity = 0
+pscin = "output/p/super.psc"
+pscout = "output/p/prim.psc"

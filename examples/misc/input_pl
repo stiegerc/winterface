@@ -1,0 +1,21 @@
+
+# GENERAL OPTIONS
+# verbosity level bitmask
+verbosity = 0			# vebosity bitmask, 11111 = 31
+prefix = "output/p/"		# prefix for additional files
+
+
+# CELL MANIPULATION
+pscin = output/p/out.psc.ap	# poscar input file
+pscout = super.psc		# poscar output file
+C				# expansion to super cell
+ 2 -1 0
+ 2  3 0
+ 0  0 1
+
+# the vacuum axis should be left as it is
+# i.e. C should have the shape
+# 
+# a b 0
+# c d 0
+# 0 0 1

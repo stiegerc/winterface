@@ -1,0 +1,5 @@
+# good test ctor script
+
+verbosity = 0
+
+wout = data/w90/mos2/bdsdbsa

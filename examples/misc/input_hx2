@@ -1,0 +1,58 @@
+# after matrices, leave one line empty or zombies will eat your brain!
+
+
+# GENERAL OPTIONS
+# verbosity level bitmask
+verbosity = 31			# vebosity bitmask, 11111 = 31
+prefix = "output/hx/"		# prefix for additional files
+
+
+
+
+# SETUP STAGE
+wout = data/wannier90.wout	# Wannier out file
+hrdat = data/wannier90_hr.dat	# Wannier Hamiltonian file
+weig = data/wannier90.eig	# Wannier Eigenvalues file
+outcar = data/OUTCAR		# VASP OUTCAR file, for the Fermi energy
+
+# material generation
+mode = "atomic"			# use atomic positions when matching wf
+xyz				# template for smallest ORC
+1 0 0
+0 0 1
+0 1 0
+
+#C				# expansion to ORC overwrite, alternative to xyz
+# 1 1  0
+# 0 0 -1
+#-1 1  0
+
+tol = 0.0			# cutoff tolerance for interactions among wf
+l = 3 1 1			# manual expansion to nn only ORC
+filter_wbh = T F F		# filter bonds in x direction only
+vac = 3				# vacuum modification for restr. dir.
+
+
+# disable bandstructure test
+rho_k = 0.0
+Nk = 0
+
+
+
+# HAMILTONIAN MATRIX CONSTRUCTION STAGE
+device_length = 30.0		# in Angstrom
+force_check = T			# force integrity check after writing sparse matrices
+strict_matching = T		# allow only strict matching {i,j,b_ij}
+sptol = 0.1			# spacial tolerance when looking for bonds
+
+
+# STANDALONE VERSION ONLY
+layer_matrix = Layer_Matrix.dat	# filename for the layer matrix
+r = F T F			# restricted dimensions
+
+# HAMILTONIAN FORMAT
+hr_out = "mos2.hr"		# output file name
+hr_format = "hr32r"		# output format, real, single precision
+#hr_format = "hr32c"		# output format, complex, single precision
+#hr_format = "hr64r"		# output format, real, double precision
+#hr_format = "hr64c"		# output format, complex, double precision

@@ -1,0 +1,71 @@
+# after matrices, leave one line empty or zombies will eat your brain!
+
+
+# GENERAL OPTIONS
+# verbosity level bitmask
+verbosity = 31		# vebosity bitmask, 11111 = 31
+prefix = "out/"		# prefix for additional files
+
+
+
+
+# SETUP STAGE
+wout = data/wannier90.wout	# Wannier out file
+hrdat = data/wannier90_hr.dat	# Wannier Hamiltonian file
+weig = data/wannier90.eig	# Wannier Eigenvalues file
+outcar = data/OUTCAR		# VASP OUTCAR file, for the Fermi energy
+
+# material generation
+mode = "atomic"			# use atomic positions when matching wf
+xyz				# template for smallest ORC
+0 1 0
+0 0 1
+1 0 0
+
+tol = 0.0			# cutoff tolerance for interactions among wf
+vac = 3				# vacuum modification for restr. dir.
+
+
+
+
+
+# BANDSTRUCTURE TEST
+# mesh
+bzbounds = -.5 .5		# bounds for mesh in the Brillouin zone
+rho_k = 1000			# k point density in the mesh
+maj_style = "MATLAB"		# data majority style in the mesh
+
+# trace
+Nk = 301			# number of k points along the trace
+kpts
+.0 .0 .5 # Z
+.0 .0 .0 # Gamma 
+.5 .0 .0 # X
+
+re = T				# ignore complex parts
+Lvb = 1.0			# critical depth into the valence bands [eV]
+Lcb = 1.0			# critical depth into the conduction bands [eV]
+toldev = 30			# tolerable deviations [meV]
+Nthreads = 0			# number of threads, 0 ~ number cpu cores
+
+expand_mesh = 1			# expand cell for mesh BS test
+				# - 0: use primitive cell
+				# - 1: use smallest ORC
+				# - 2: use nn only ORC
+expand_trace = 1		# expand cell for trace BS test
+
+
+
+
+# HAMILTONIAN MATRIX CONSTRUCTION STAGE
+device_length = 400.0		# in Angstrom
+force_check = T			# force integrity check after writing sparse matrices
+strict_matching = T		# allow only strict matching {i,j,b_ij}
+
+
+
+
+
+# STANDALONE VERSION ONLY
+layer_matrix = Layer_Matrix.dat	# filename for the layer matrix
+r = F T F			# restricted dimensions

@@ -1,0 +1,31 @@
+hx:
+This Hamiltonian constructor allows for more general matrix layouts than OMEN specifies.
+The example provided here is such that the interactions are nn only in x direction,
+but further interactions are included in the z direction. Since the code filters bonds
+in a wbh such that no matrix entries appear in device Hamiltonians further than nn cells
+(those found in the lattice_dat file), an additional option for the input file had
+to be introduced, allowing for selective filtering by direction as well.
+
+In one case (file 'input_hx1') the expansion to nn only is specified as:
+l = 3 1 2			# manual expansion to nn only ORC
+filter_wbh = T F T		# filter bonds in x and z directions
+here bonds are filtered in x AND z direction such that only nn interactions remain.
+
+For the other case (file 'input_hx2') the expansion is specified as:
+l = 3 1 1			# manual expansion to nn only ORC
+filter_wbh = T F F		# filter bonds in x direction only
+here bonds are filtered ONLY in x direction such that in this direction only nn
+interactions remain. The bonds in z direction are left as they are.
+
+In comparison, the bandstructure for the first case is folded in z direction, leading
+to more bands than for the second case. But the bands in common are the same upto a
+small discrepancy due to the filtering of the bonds along z in the first case (whereas
+the second case includes all of them). However for the second case, there are more
+than 3 R vectors in z direction. Also note that lusing arger cells leads to
+significantly higher data duplication in the Hamiltonian matrices and therefore to
+potentially much larger files.
+In one go only these two options are available. For other cases where you perhaps
+want some of the bonds in z filtered, you have to run the setup stage multiple times
+and select the combination of files you want manually. In any case, the R grid for
+which Hamiltonian entries exist is probed (unless the grid is supplied manually) and
+a set of H(R) encompassing all the relevant data is generated automatically.

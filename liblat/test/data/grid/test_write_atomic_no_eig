@@ -1,0 +1,11 @@
+# bad test write atomic script, no eig
+
+verbosity = 0
+
+wout = data/w90/mos2/wannier90.wout
+hrdat = data/w90/mos2/wannier90_hr.dat
+
+prefix = data/grid/outp/
+
+mode =  atomic
+no_stump = T

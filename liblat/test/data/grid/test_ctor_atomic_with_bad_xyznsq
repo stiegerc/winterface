@@ -1,0 +1,13 @@
+# ctor script with bad xyz (not square)
+
+verbosity = 0
+
+wout = data/w90/mos2/wannier90.wout
+hrdat = data/w90/mos2/wannier90_hr.dat
+r = F T F
+mode =  atomic
+
+xyz
+ 2 3
+ 1 3
+ 1 4

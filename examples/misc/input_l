@@ -1,0 +1,19 @@
+# after matrices, leave one line empty or zombies will eat your brain!
+
+# GENERAL OPTIONS
+# verbosity level bitmask
+verbosity = 0			# vebosity bitmask, 11111 = 31
+prefix = "output/l/"		# prefix for additional files
+
+
+# CELL MANIPULATION
+pscin = output/l/out.psc.ap	# poscar input file
+pscout = super.psc		# poscar output file
+C				# expansion to ORC
+ 1 1 0
+-1 1 0
+ 0 0 1
+
+phi_x = 30.0			# rotate x-axis by 30°
+phi_y =  0.0			# no rotation in y
+phi_z = 45.0			# rotate z-axis by 45°

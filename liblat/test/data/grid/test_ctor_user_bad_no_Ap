@@ -1,0 +1,6 @@
+
+verbosity = 0
+
+wout = data/w90/mos2/wannier90.wout
+r = F T F
+mode =  user

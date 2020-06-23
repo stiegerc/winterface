@@ -1,0 +1,17 @@
+#randomly generated script
+
+tStrings1 = nzly
+tUint1 = 318
+tDoublesV1 = -0.521116 0.554065 -0.06396 0.80187 -0.259831 0.368051
+tUintsVNT1 = 1 6 3 4
+tUintsVT1 = 8 5 6 10 0 3 8 9
+tBoolsF1 = 1 0 0
+tMat1
+ 0.401429835015 -0.871896159329 -0.064783756362 0.433187192491
+-0.097326439303 -0.926040556924  0.923391898613 0.622000794407
+
+
+
+
+KEYS REMOVED:
+tMatF1 tBoolsV1 tBool1 tUintsFNT1 tDouble1 verbosity tUintsFT1 tDoublesF1 tString1

@@ -1,0 +1,12 @@
+# ctor test script with bad C (B*C not orthorhombic)
+
+verbosity = 0
+
+wout = data/w90/mos2/wannier90.wout
+hrdat = data/w90/mos2/wannier90_hr.dat
+r = F T F
+mode =  atomic
+C
+ 1 0 0
+ 0 1 0
+ 0 0 1

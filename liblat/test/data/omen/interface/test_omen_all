@@ -1,0 +1,32 @@
+# test omen with bs test
+
+verbosity = 0
+vprefix = data/omen/interface/outp/
+
+Nthreads = 4
+
+wout = data/w90/mos2/wannier90.wout
+hrdat = data/w90/mos2/wannier90_hr.dat
+weig = data/w90/mos2/wannier90.eig
+outcar = data/w90/mos2/OUTCAR
+
+prefix = data/omen/interface/outp/
+
+tol = 0.0
+
+mode =  atomic
+
+Nk = 0
+kpts
+.0 .0 .0
+.5 .0 .0
+.0 .0 .5
+.0 .0 .0
+
+r = 1 1 0
+IR = 19.472584
+B
+ 13.600000  0.000000 -0.000000
+  0.000000 29.893856  0.000000
+  0.000000  0.000000 17.666916
+

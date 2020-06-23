@@ -1,0 +1,29 @@
+# good test write atomic scrip with Cz defined
+
+verbosity = 0
+
+wout = data/w90/mos2/wannier90.wout
+hrdat = data/w90/mos2/wannier90_hr.dat
+weig = data/w90/mos2/wannier90.eig
+outcar = data/w90/mos2/OUTCAR
+
+prefix = data/grid/outp/
+
+mode =  atomic
+no_stump = T
+
+rhok = 0
+Nk = 0
+
+C
+ 1 0 2
+ 0 1 0
+-1 0 0
+
+r = 1 1 0
+IR = 17.069465
+B
+ 5.888972  0.000000 0.000000
+ 0.000000 29.893856 0.000000
+ 0.000000  0.000000 3.400000
+

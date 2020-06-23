@@ -1,0 +1,21 @@
+# test script
+
+wout = bla.wout
+hrdat = bla_hr.dat
+prefix = bla/blub/
+
+tol = 1e-5
+
+abl = 1 3
+wbl = 0 2
+
+r = F T T
+
+P
+0 1 0
+1 0 0
+0 0 1
+
+verbosity = 0
+
+scale_file = data/scripts/wsc/rnd.wsc

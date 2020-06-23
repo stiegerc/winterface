@@ -1,0 +1,16 @@
+prefix = out/
+
+r = T T F
+layer_matrix = Layer_Matrix.dat
+
+wbh = wbhs/interf_rot.wbh wbhs/dbl_left_rot.wbh wbhs/dbl_right_rot.wbh
+wbh_out = interf_mod.wbh dbl_left_mod.wbh dbl_right_mod.wbh
+
+force_check = T
+strict_matching = F
+sptol = 1e-1
+
+perimeter_radius = .5
+signs_tol = 1e-3
+
+verbosity = 31

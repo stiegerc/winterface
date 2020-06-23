@@ -1,0 +1,49 @@
+# after matrices, leave one line empty or zombies will eat your brain!
+
+
+# GENERAL OPTIONS
+# verbosity level bitmask
+verbosity = 31		# vebosity bitmask, 11111 = 31
+prefix = "out/"		# prefix for additional files
+
+
+
+
+# SETUP STAGE
+wout = data/wannier90.wout	# Wannier out file
+hrdat = data/wannier90_hr.dat	# Wannier Hamiltonian file
+weig = data/wannier90.eig	# Wannier Eigenvalues file
+outcar = data/OUTCAR		# VASP OUTCAR file, for the Fermi energy
+
+# material generation
+mode = "atomic"			# use atomic positions when matching wf
+xyz				# template for smallest ORC
+0 1 0
+0 0 1
+1 0 0
+
+tol = 1e-4			# cutoff tolerance for interactions among wf
+vac = 3				# vacuum modification for restr. dir.
+
+
+# disable bandstructure test
+Nk = 0
+rho_k = 100.0
+
+
+
+
+
+
+# HAMILTONIAN MATRIX CONSTRUCTION STAGE
+force_check = T			# force integrity check after writing sparse matrices
+strict_matching = F		# allow only strict matching {i,j,b_ij}
+sptol = 0.1			# spatial tolerance when querying for bonds
+
+
+
+
+
+# STANDALONE VERSION ONLY
+layer_matrix = Layer_Matrix.dat	# filename for the layer matrix
+r = F T F			# restricted dimensions

@@ -1,0 +1,25 @@
+# after matrices, leave one line empty or zombies will eat your brain!
+
+# GENERAL OPTIONS
+# verbosity level bitmask
+verbosity = 31			# vebosity bitmask, 11111 = 31
+prefix = "output/bl/"		# prefix for additional files
+
+
+# BANDSTRUCTURE CALCULATION
+inprefix = "../mos2/"		# prefix for OMEN files
+mat_par = "ph_mat_par"		# OMEN material file
+lattice_dat = "lattice_dat"	# OMEN lattice file
+mode = "legacy"			# use the folding algorithm
+r = T T F			# 2D restrictions for OMEN
+
+# trace
+Nk = 301			# number of k points along the trace
+kpts
+-0.50000 0.00000 0.00000
+ 0.50000 0.00000 0.00000
+
+# mesh
+bzbounds = -.5 .5		# bounds for mesh in the Brillouin zone
+rho_k = 1000			# k point density in the mesh
+maj_style = "MATLAB"		# data majority style in the mesh

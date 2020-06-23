@@ -1,0 +1,46 @@
+
+
+Wed-04-Mar-2020-06:37:14-AM-CET
+
+valid options are:
+ -i: to generate OMEN input
+ -h: to write matrices for OMEN
+ -b: to calculate bandstructures
+ -l: to manipulate lattices
+ -f: to convert files to poscars
+ -p: to find primitive unit cells
+ -q: to query the contents of a wannier bonds hamiltonian
+ -w: to generate a wannier bonds hamiltonian from wannier90 output
+ -c: to convert deprecated 'bh.wad' into 'wannier90.wbh'
+
+the following options will overwrite their input script counterparts:
+ --direct: output in direct coordinates
+ --cartesian: output in cartesian coordinates
+ --pscin: input POSCAR file
+ --pscout: output POSCAR file
+ --r: restriction vector, used to specify vacuum dimensions
+ --vac: new vacuum level
+ --bond_factor: factor used when generating bonds
+
+
+Tue-23-Jun-2020-01:05:37-AM-CEST
+
+valid options are:
+ -i: to generate OMEN input
+ -h: to write matrices for OMEN
+ -b: to calculate bandstructures
+ -l: to manipulate lattices
+ -f: to convert files to poscars
+ -p: to find primitive unit cells
+ -q: to query the contents of a wannier bonds hamiltonian
+ -w: to generate a wannier bonds hamiltonian from wannier90 output
+ -c: to convert deprecated 'bh.wad' into 'wannier90.wbh'
+
+the following options will overwrite their input script counterparts:
+ --direct: output in direct coordinates
+ --cartesian: output in cartesian coordinates
+ --pscin: input POSCAR file
+ --pscout: output POSCAR file
+ --r: restriction vector, used to specify vacuum dimensions
+ --vac: new vacuum level
+ --bond_factor: factor used when generating bonds

@@ -1,0 +1,8 @@
+# good test ctor script
+
+verbosity = 0
+
+wout = data/w90/mos2/wannier90.wout
+hrdat = data/w90/mos2/wannier90_hr.dat
+
+mode =  wannier

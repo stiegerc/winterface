@@ -1,0 +1,24 @@
+## doxygen configuration file
+
+PROJECT_NAME		= winterface
+PROJECT_NUMBER		= 1.0
+PROJECT_BRIEF		= "Interfacing code for Wannier90 Hamiltonians and QT Solvers"
+OUTPUT_DIRECTORY	= doc/
+
+JAVADOC_AUTOBRIEF	= YES
+
+EXTRACT_STATIC		= YES
+
+INPUT			= libmat/include liblat/include ltool/include mainpage.h
+WARNINGS		= YES
+
+GENERATE_HTML		= YES
+
+GENERATE_LATEX		= NO
+PDF_HYPERLINKS		= YES
+USE_PDFLATEX		= YES
+
+CLASS_DIAGRAMS		= YES
+CALL_GRAPH		= YES
+CALLER_GRAPH		= YES
+HAVE_DOT		= YES

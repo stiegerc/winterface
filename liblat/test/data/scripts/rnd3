@@ -1,0 +1,40 @@
+#randomly generated script
+
+tString1 = eccmbxkbhlwfozivtkbd
+tStrings1 = nzly
+tDouble1 = -4.42761
+tUint1 = 318
+tBool1 = 0
+tDoublesF1 = -0.82553 0.732003 0.149389
+tDoublesV1 = -0.521116 0.554065 -0.06396 0.80187 -0.259831 0.368051
+tUintsFNT1 = 3 1 3
+tUintsFT1 = 2 3 0
+tUintsVNT1 = 1 6 3 4
+tUintsVT1 = 8 5 6 10 0 3 8 9
+tBoolsF1 = 1 0 0
+tBoolsV1 = 1 1 1 1
+tMat1
+ 0.401429835015 -0.871896159329 -0.064783756362 0.433187192491
+-0.097326439303 -0.926040556924  0.923391898613 0.622000794407
+
+tMatF1 = data/scripts/tMatF1
+
+verbosity = 0
+tString2 = jegyhvjxcuhmjqjfq
+tStrings2 = jnn yee mfjmeea lpdjb
+tDouble2 = -1.5018
+tUint2 = 449
+tBool2 = 1
+tDoublesF2 = -0.675809 0.0392347 0.0398273
+tDoublesV2 = -0.216899 0.602751 -0.750131
+tUintsFNT2 = 1 1 2
+tUintsFT2 = 2 0 1
+tUintsVNT2 = 6 5 7 2 4 5 10 6
+tUintsVT2 = 5 9 3 2 4 0 10 0
+tBoolsF2 = 0 0 1
+tBoolsV2 = 0 0 1 0 1 0 0 0 0 1
+tMat2
+-0.864599693998 -0.037653043834 -0.226124986381  0.694826028900 -0.137435075707 0.509365081397
+ 0.331572731905 -0.451958317374 -0.902295337123 -0.279437713984 -0.023100693159 0.203640018596
+
+tMatF2 = data/scripts/tMatF2

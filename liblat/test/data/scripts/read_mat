@@ -1,0 +1,3 @@
+# check read matrix from file
+tMat1 = data/scripts/tMat1
+verbosity = 0

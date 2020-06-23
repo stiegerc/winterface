@@ -1,0 +1,32 @@
+#!/bin/bash
+
+
+# interf
+echo wout = ../ws2_mos2_lateral/data/wannier90.wout > mk
+echo hrdat = ../ws2_mos2_lateral/data/wannier90_hr.dat >> mk
+echo wbh = wbhs/interf.wbh >> mk
+#echo tol = 0.0 >> mk
+echo tol = 1e-3 >> mk
+echo verbosity = 0 >> mk
+
+../ltool -wmk
+rm mk
+
+
+
+# dbl1
+echo wout = ../mos2_ws2_stack/data/wannier90.wout > mk
+echo hrdat = ../mos2_ws2_stack/data/wannier90_hr.dat >> mk
+echo wbh = wbhs/dbl_left.wbh >> mk
+#echo tol = 0.0 >> mk
+echo tol = 1e-3 >> mk
+echo verbosity = 0 >> mk
+
+../ltool -wmk
+rm mk
+
+
+# dbl2
+cp wbhs/dbl_left.wbh wbhs/dbl_right.wbh
+
+rm *.log

@@ -1,0 +1,30 @@
+# after matrices, leave one line empty or zombies will eat your brain!
+
+# GENERAL OPTIONS
+# verbosity level bitmask
+verbosity = 31			# vebosity bitmask, 11111 = 31
+prefix = "output/b/"		# prefix for additional files
+
+
+# BANDSTRUCTURE CALCULATION
+wout = data/wannier90.wout	# Wannier out file
+hrdat = data/wannier90_hr.dat	# Wannier Hamiltonian file
+mode = "fold"			# use the folding algorithm
+C				# expansion to ORC
+ 1 1 0
+-1 1 0
+ 0 0 1
+
+# trace
+Nk = 301			# number of k points along the trace
+kpts
+0.00000 0.00000 0.00000 ! Gamma
+0.50000 0.00000 0.00000 ! X
+0.50000 0.50000 0.00000 ! S
+0.00000 0.50000 0.00000 ! Y
+0.00000 0.00000 0.00000 ! Gamma
+
+# mesh
+bzbounds = -.5 .5		# bounds for mesh in the Brillouin zone
+rho_k = 3000			# k point density in the mesh
+maj_style = "MATLAB"		# data majority style in the mesh

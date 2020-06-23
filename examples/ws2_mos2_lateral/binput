@@ -1,0 +1,20 @@
+# after matrices, leave one line empty or zombies will eat your brain!
+
+
+# GENERAL OPTIONS
+# verbosity level bitmask
+verbosity = 31		# vebosity bitmask, 11111 = 31
+prefix = "bsout/"	# prefix for additional files
+mode = "local"
+
+# spacial tolerance
+sptol = 1e-2
+strict_matching = F
+
+# kpts
+Nk = 301
+rho_k = 0
+
+# WBH
+wbh = "wannier90.wbh"	# wbh file from setup stage
+

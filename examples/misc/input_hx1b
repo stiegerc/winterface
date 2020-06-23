@@ -1,0 +1,21 @@
+# after matrices, leave one line empty or zombies will eat your brain!
+
+# GENERAL OPTIONS
+# verbosity level bitmask
+verbosity = 31				# vebosity bitmask, 11111 = 31
+prefix = "output/hx/nn_"		# prefix for additional files
+
+
+# BANDSTRUCTURE CALCULATION
+hr = "mos2_nn.hr"			# hr input file
+layer_matrix = "Layer_Matrix.dat"	# layer matrix for hr file
+mode = "hr"				# use the folding algorithm
+re = T					# no complex parts
+
+# trace
+rho_k = 0				# skip mesh
+Nk = 31					# number of k points along the trace
+kpts
+-0.50000 0.00000 0.00000 ! X
+ 0.50000 0.00000 0.00000 ! X
+

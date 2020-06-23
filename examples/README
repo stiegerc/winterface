@@ -1,0 +1,36 @@
+Examples can be run with the 'make' command.
+Feel free to edit the input scripts as you see fit.
+Matlab scripts to plot the results are included.
+
+mos2:
+Generate Hamiltonian matrices for transport in x and y direction.
+This is using exact upscaling.
+
+ws2:
+Generate Hamiltonian matrices for transport in x and y direction.
+This is using exact upscaling.
+
+mos2_ws2_stack:
+Generate Hamiltonian matrices for a structure with an overlap region
+This is using exact upscaling with some parts missing.
+
+ws2_mos2_lateral:
+Generate Hamiltonian matrices with each side extended.
+Compute local bandstructures.
+This is using inexact upscaling.
+
+mos2_ws2_multiple:
+Generate Hamiltonian matrices for a structure made from
+multiple Wannierizations. This is experimental and
+is using inexact upscaling.
+
+misc:
+A demonstration of other switches possible in ltool
+-b: compute bandstructures
+-bl: bandstructure legacy mode (directly from H_* for OMEN)
+-hx: custom Hamiltonian constructor demonstration
+-w: generate wannier bonds hamiltonians
+-l: manipulate lattices
+-p: find primitive unit cell from super cell
+
+note: bl requires to run 'xdir' in mos2 first
