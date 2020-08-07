@@ -6,6 +6,7 @@ Winterface or 'Wannier Interface' is a code able to generate device scale Hamilt
 The code is subdivided in 3 parts: A matrix library called *libmat*, a lattice library called *liblat* and a tool exposing the functionality of the former called *ltool*
 
 Documentation generated using doxygen is included.
+A publication explaining the code presented here can be found on arXiv (https://arxiv.org/abs/2007.04268)
 
 ### Prerequisites
 

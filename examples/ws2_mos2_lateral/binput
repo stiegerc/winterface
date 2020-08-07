@@ -8,7 +8,7 @@ prefix = "bsout/"	# prefix for additional files
 mode = "local"
 
 # spacial tolerance
-sptol = 1e-2
+sptol = 1e-1
 strict_matching = F
 
 # kpts
